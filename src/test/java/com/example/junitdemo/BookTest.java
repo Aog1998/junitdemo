@@ -16,7 +16,6 @@ public class BookTest {
 
 
 
-
     //表示被注解的方法应该在当前类的所有@Test
     // @RepeatedTest，@ParameterizedTest和@TestFactory方法之前执行
     @BeforeAll

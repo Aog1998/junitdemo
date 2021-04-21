@@ -9,6 +9,8 @@ import org.junit.runners.MethodSorters;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+//可控制测试方法执行顺序
+//测试方法均以testNNN开头（NNN表示序列号 001-999）
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class OrderedTest {
 

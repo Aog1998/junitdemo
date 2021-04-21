@@ -10,17 +10,19 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assumptions.assumingThat;
 
-public class ParametricTest {
 
+public class ParametricTest {
+    //参数化测试
     @ParameterizedTest
-    @ValueSource(strings = { "abc", "ab c", "abc is abc" })
+    @ValueSource(strings = { "a bc", "ab c", "abc is abc" })
     void palindromes(String candidate) {
+        //containsWhitespace()判断字符串是否包含空格符
         assertTrue(StringUtils.containsWhitespace(candidate));
     }
 
 
-
-    @Test
+    //假设的使用
+    @Test()
     void testInAllEnvironments() {
         assumingThat("Windows_NT".equals(System.getenv("OS")),
                 () -> {

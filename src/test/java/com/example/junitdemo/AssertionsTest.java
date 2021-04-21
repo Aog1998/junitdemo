@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+//断言的使用
 public class AssertionsTest {
     @Test
     void standardAssertions() {
